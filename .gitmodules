@@ -1,0 +1,9 @@
+[submodule "api/core/class/database"]
+	path = api/core/class/database
+	url = git@github.com:ershov-ilya/database-class.git
+[submodule "api/core/class/format"]
+	path = api/core/class/format
+	url = git@github.com:ershov-ilya/format.class.php.git
+[submodule "api/core/class/restful"]
+	path = api/core/class/restful
+	url = git@github.com:ershov-ilya/restful.class.php.git

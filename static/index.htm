@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html g_init="6741">
+  <head>
+	<meta charset="utf-8">
+	<title>Таблица данных по заявкам</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/assets/datatables/datatables.min.css">
+  </head>
+  <body>
+	<div class="container-fluid">
+	  <h1>Таблица данных по заявкам</h1>
+	  <div class="row">
+		<div class="col-xs-12">
+		  <div class="row">
+			<div class="col-sm-4">
+			  <label for="select-type">Фильтр по виду работ</label>
+			  <select id="select-type" class="form-control filter-select" name="type">
+				<option value="" selected>Не выбрано</option>
+				<option value="Обслуживание">Обслуживание</option>
+				<option value="Замена">Замена</option>
+				<option value="Установка">Установка</option>
+				<option value="Ложный выезд">Ложный выезд</option>
+				<option value="Выезд в банк">Выезд в банк</option>
+				<option value="Демонтаж">Демонтаж</option>
+			  </select>
+			</div>
+			<div class="col-sm-4">
+			  <label for="select-bank">Фильтр по банку</label>
+			  <select id="select-bank" class="form-control filter-select" name="bank">
+				<option value="" selected>Не выбрано</option>
+				<option value="ВТБ">ВТБ</option>
+				<option value="КЕБ">КЕБ</option>
+				<option value="ПСБ">ПСБ</option>
+				<option value="Зенит">Зенит</option>
+				<option value="Бинбанк">БинБанк</option>
+			  </select>
+			</div>
+			<div class="col-sm-4">
+			  <label for="select-city">Фильтр по городу</label>
+			  <select id="select-city" class="form-control filter-select" name="city">
+				<option value="" selected>Не выбрано</option>
+				<option value="Москва">Москва</option>
+				<option value="Московская область">Московская область</option>
+			  </select>
+			</div>
+		  </div>
+		  <p>&nbsp;</p>
+		  
+		  <table id="datatable-table" class="table table-hover table-bordered table-striped">
+			<thead>
+			  <tr>
+				<th>Дата создания заявки</th>
+				<th>ФИО Инженера</th>
+				<th>Номер заявки</th>
+				<th>Акты</th>
+				<th>Тип обслуживания</th>
+				<th>Наименование Банка</th>
+				<th>Стоимость работ</th>
+				<th>Статус</th>
+				<th>Комментарий</th>
+				<th>Категория</th>
+				<th>Город</th>
+				<th>Уведомление Инженико</th>
+			  </tr>
+			</thead>
+			
+		  </table>
+		  <a href="sheker.html"  class="btn btn-info btn-block btn-lg">Перейти к форме</a><br>
+		</div><!-- /col-xs-12 -->
+	  </div><!-- /row -->
+	</div> <!-- /container-fluid -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/assets/datatables/datatables.min.js"></script>
+	<script src="filter.js"></script>
+	<script src="app.js"></script>
+  </body>
+</html>
