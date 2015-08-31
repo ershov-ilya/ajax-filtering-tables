@@ -7,3 +7,6 @@
 [submodule "api/core/class/restful"]
 	path = api/core/class/restful
 	url = git@github.com:ershov-ilya/restful.class.php.git
+[submodule "assets/datatables"]
+	path = assets/datatables
+	url = https://github.com/DataTables/DataTables.git
